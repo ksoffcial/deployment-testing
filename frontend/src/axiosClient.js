@@ -1,10 +1,9 @@
 import axios from "axios";
-
 const axiosClient = axios.create({
-    baseURL:'https://leetcode-clone-5z62.onrender.com/',
-    withCredentials:true,
-    headers:{
-        'Content-Type' : 'application/json'
+    baseURL: import.meta.env.VITE_BACKEND_URL,
+    withCredentials: true,
+    headers: {
+        'Content-Type': 'application/json'
     }
 });
 
