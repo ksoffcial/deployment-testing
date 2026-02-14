@@ -5,10 +5,10 @@ const cors = require('cors')
 const app = express();
 require('dotenv').config()
 
-// app.use(cors({
-//     origin: 'https://localhost:5173',
-//     credentials: true
-// }))
+app.use(cors({
+    origin: 'https://deployment-testing-omega.vercel.app',
+    credentials: true
+}))
 
 app.use(express.json());
 
